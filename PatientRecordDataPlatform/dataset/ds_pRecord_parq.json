@@ -1,0 +1,181 @@
+{
+    "name": "ds_pRecord_parq",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "ls_pRecord_parq",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "Parquet",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobFSLocation",
+                "folderPath": "bronze",
+                "fileSystem": "patient-record"
+            },
+            "compressionCodec": "snappy"
+        },
+        "schema": [
+            {
+                "name": "patient_id",
+                "type": "UTF8"
+            },
+            {
+                "name": "first_name",
+                "type": "UTF8"
+            },
+            {
+                "name": "last_name",
+                "type": "UTF8"
+            },
+            {
+                "name": "date_of_birth",
+                "type": "UTF8"
+            },
+            {
+                "name": "age",
+                "type": "UTF8"
+            },
+            {
+                "name": "gender",
+                "type": "UTF8"
+            },
+            {
+                "name": "ssn",
+                "type": "UTF8"
+            },
+            {
+                "name": "phone_number",
+                "type": "UTF8"
+            },
+            {
+                "name": "email",
+                "type": "UTF8"
+            },
+            {
+                "name": "address",
+                "type": "UTF8"
+            },
+            {
+                "name": "city",
+                "type": "UTF8"
+            },
+            {
+                "name": "state",
+                "type": "UTF8"
+            },
+            {
+                "name": "zip_code",
+                "type": "UTF8"
+            },
+            {
+                "name": "admission_date",
+                "type": "UTF8"
+            },
+            {
+                "name": "discharge_date",
+                "type": "UTF8"
+            },
+            {
+                "name": "length_of_stay_days",
+                "type": "UTF8"
+            },
+            {
+                "name": "admission_type",
+                "type": "UTF8"
+            },
+            {
+                "name": "department",
+                "type": "UTF8"
+            },
+            {
+                "name": "attending_physician",
+                "type": "UTF8"
+            },
+            {
+                "name": "primary_diagnosis",
+                "type": "UTF8"
+            },
+            {
+                "name": "secondary_diagnosis",
+                "type": "UTF8"
+            },
+            {
+                "name": "medication_1",
+                "type": "UTF8"
+            },
+            {
+                "name": "medication_2",
+                "type": "UTF8"
+            },
+            {
+                "name": "height_cm",
+                "type": "UTF8"
+            },
+            {
+                "name": "weight_kg",
+                "type": "UTF8"
+            },
+            {
+                "name": "bmi",
+                "type": "UTF8"
+            },
+            {
+                "name": "blood_pressure",
+                "type": "UTF8"
+            },
+            {
+                "name": "heart_rate_bpm",
+                "type": "UTF8"
+            },
+            {
+                "name": "temperature_celsius",
+                "type": "UTF8"
+            },
+            {
+                "name": "oxygen_saturation_pct",
+                "type": "UTF8"
+            },
+            {
+                "name": "blood_glucose_mgdl",
+                "type": "UTF8"
+            },
+            {
+                "name": "creatinine_mgdl",
+                "type": "UTF8"
+            },
+            {
+                "name": "hba1c_pct",
+                "type": "UTF8"
+            },
+            {
+                "name": "insurance_provider",
+                "type": "UTF8"
+            },
+            {
+                "name": "insurance_claim_amount_usd",
+                "type": "UTF8"
+            },
+            {
+                "name": "icu_days",
+                "type": "UTF8"
+            },
+            {
+                "name": "readmission_30day_flag",
+                "type": "UTF8"
+            },
+            {
+                "name": "smoker",
+                "type": "UTF8"
+            },
+            {
+                "name": "alcohol_use",
+                "type": "UTF8"
+            },
+            {
+                "name": "discharge_disposition",
+                "type": "UTF8"
+            }
+        ]
+    }
+}

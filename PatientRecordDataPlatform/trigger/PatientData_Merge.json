@@ -1,0 +1,24 @@
+{
+    "name": "PatientData_Merge",
+    "properties": {
+        "annotations": [],
+        "runtimeState": "Started",
+        "pipelines": [
+            {
+                "pipelineReference": {
+                    "referenceName": "PatientRecordPipeline01",
+                    "type": "PipelineReference"
+                }
+            }
+        ],
+        "type": "ScheduleTrigger",
+        "typeProperties": {
+            "recurrence": {
+                "frequency": "Day",
+                "interval": 1,
+                "startTime": "2026-05-05T02:28:00",
+                "timeZone": "GMT Standard Time"
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "name": "ls_Minor",
+    "properties": {
+        "annotations": [],
+        "type": "AzureDatabricks",
+        "typeProperties": {
+            "domain": "https://adb-7405613009689131.11.azuredatabricks.net",
+            "accessToken": {
+                "type": "AzureKeyVaultSecret",
+                "store": {
+                    "referenceName": "PatientKV",
+                    "type": "LinkedServiceReference"
+                },
+                "secretName": "NewPatientKV"
+            },
+            "existingClusterId": "0430-205528-42azy4ys"
+        }
+    }
+}

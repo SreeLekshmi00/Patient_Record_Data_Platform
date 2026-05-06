@@ -1,0 +1,184 @@
+{
+    "name": "ds_pRecord_csv",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "ls_pRecord_csv",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobFSLocation",
+                "fileName": "Patient_Record.csv",
+                "fileSystem": "raw"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": [
+            {
+                "name": "patient_id",
+                "type": "String"
+            },
+            {
+                "name": "first_name",
+                "type": "String"
+            },
+            {
+                "name": "last_name",
+                "type": "String"
+            },
+            {
+                "name": "date_of_birth",
+                "type": "String"
+            },
+            {
+                "name": "age",
+                "type": "String"
+            },
+            {
+                "name": "gender",
+                "type": "String"
+            },
+            {
+                "name": "ssn",
+                "type": "String"
+            },
+            {
+                "name": "phone_number",
+                "type": "String"
+            },
+            {
+                "name": "email",
+                "type": "String"
+            },
+            {
+                "name": "address",
+                "type": "String"
+            },
+            {
+                "name": "city",
+                "type": "String"
+            },
+            {
+                "name": "state",
+                "type": "String"
+            },
+            {
+                "name": "zip_code",
+                "type": "String"
+            },
+            {
+                "name": "admission_date",
+                "type": "String"
+            },
+            {
+                "name": "discharge_date",
+                "type": "String"
+            },
+            {
+                "name": "length_of_stay_days",
+                "type": "String"
+            },
+            {
+                "name": "admission_type",
+                "type": "String"
+            },
+            {
+                "name": "department",
+                "type": "String"
+            },
+            {
+                "name": "attending_physician",
+                "type": "String"
+            },
+            {
+                "name": "primary_diagnosis",
+                "type": "String"
+            },
+            {
+                "name": "secondary_diagnosis",
+                "type": "String"
+            },
+            {
+                "name": "medication_1",
+                "type": "String"
+            },
+            {
+                "name": "medication_2",
+                "type": "String"
+            },
+            {
+                "name": "height_cm",
+                "type": "String"
+            },
+            {
+                "name": "weight_kg",
+                "type": "String"
+            },
+            {
+                "name": "bmi",
+                "type": "String"
+            },
+            {
+                "name": "blood_pressure",
+                "type": "String"
+            },
+            {
+                "name": "heart_rate_bpm",
+                "type": "String"
+            },
+            {
+                "name": "temperature_celsius",
+                "type": "String"
+            },
+            {
+                "name": "oxygen_saturation_pct",
+                "type": "String"
+            },
+            {
+                "name": "blood_glucose_mgdl",
+                "type": "String"
+            },
+            {
+                "name": "creatinine_mgdl",
+                "type": "String"
+            },
+            {
+                "name": "hba1c_pct",
+                "type": "String"
+            },
+            {
+                "name": "insurance_provider",
+                "type": "String"
+            },
+            {
+                "name": "insurance_claim_amount_usd",
+                "type": "String"
+            },
+            {
+                "name": "icu_days",
+                "type": "String"
+            },
+            {
+                "name": "readmission_30day_flag",
+                "type": "String"
+            },
+            {
+                "name": "smoker",
+                "type": "String"
+            },
+            {
+                "name": "alcohol_use",
+                "type": "String"
+            },
+            {
+                "name": "discharge_disposition",
+                "type": "String"
+            }
+        ]
+    }
+}
